@@ -23,7 +23,7 @@ let final_lider_pueblo_CM_1, final_lider_pueblo_CM_2, final_sola_encuentro_con_v
 let final_rangers_pueblo_SM_1, final_rangers_pueblo_SM_2, final_rangers_pueblo_SM_3, final_rangers_pueblo_SM_4;
 let final_rangers_pueblo_CM_1, final_rangers_pueblo_CM_2, final_rangers_pueblo_CM_3, final_rangers_pueblo_CM_4, final_rangers_pueblo_CM_5;
 
-let estado = "portada";
+let estado = "inicio_0";
 
 function preload(){
   precargar();
