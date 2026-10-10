@@ -151,7 +151,7 @@ function reiniciar(){
       estado === "final_rangers_pueblo_SM_4" ||
       estado === "final_rangers_4") {
     if (mouseX > 300 && mouseX < 500 && mouseY > 394 && mouseY < 426) {
-      estado = "inicio_0";
+      estado = "portada";
       return true;
     }
   }
