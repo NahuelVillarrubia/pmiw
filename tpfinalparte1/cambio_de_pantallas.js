@@ -1,5 +1,5 @@
 function pantallas_inicio(){
-  if (pantalla_inicio_play("portada", "inicio_1")) return true;
+  if (pantalla_inicio_play("inicio_0", "inicio_1")) return true;
   if (pantalla("inicio_1", "inicio_2")) return true;
   if (pantalla("inicio_2", "inicio_3")) return true;
   if (pantalla("inicio_3", "inicio_4")) return true;
