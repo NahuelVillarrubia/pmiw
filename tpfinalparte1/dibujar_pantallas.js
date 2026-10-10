@@ -1,5 +1,5 @@
 function dibujar_pantallas (){ 
-if (estado === "portada") {
+if (estado === "inicio_0") {
   let frame = animar(portada, portada_cant, 4);
   texto_creditos();
   boton_inicio_play();
