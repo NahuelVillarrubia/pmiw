@@ -4,6 +4,7 @@ class Personaje{
    this.posY;
    this.miColor;
    this.ataquedeEnamigo; 
+  this.escudo;
  }
 
 dibujar(){
