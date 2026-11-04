@@ -8,7 +8,7 @@ class flecha{
 
 dibujar(){
   rect(this.posX, this.posY, 50, 10)
-  fill(255, 255, 0); 
+  fill(#67321F); 
    
   
 }
