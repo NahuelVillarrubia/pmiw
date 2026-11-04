@@ -1,8 +1,7 @@
 class enemigo{
-  
   constructor(){
-    this.posY=100;
-    this.posX=100;
+  this.posY=100;
+  this.posX=100;
   this.micolor= color((random)(255),(random)(255),(random)(255));
   this.posicion();
   this.flecha = new flecha;
@@ -11,20 +10,16 @@ class enemigo{
   
 }
   dibujar(){
-   
     fill(this.micolor);
     rect(this.posX, this.posY,50, 50);
-  
   }
-  
+
   posicion(){
     
    let posicion = ["ARRIBA", "ABAJO", "IZQUIERDA", "DERECHA"];
-    let estado = random(posicion);
+   let estado = random(posicion);
    
     this.posicion = estado; 
-
- 
     if (estado === "ARRIBA") {
       this.posX = 400;
       this.posY = 0;
