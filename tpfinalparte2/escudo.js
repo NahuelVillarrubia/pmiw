@@ -1,16 +1,26 @@
 class escudo{
-  constructor(){
+  constructor(data){
+  this.data = data;
   this.posX = 400;
   this.posY = 150;
-  this.tamX = 80;
-  this.tamY = 10;
+  this.tamX = 75;
+  this.tamY = 100;
   this.direccionEscudo = "ARRIBA";
   }
   
   dibujar(){
-    rectMode(CENTER);
-    fill(0);
-    rect(this.posX, this.posY, this.tamX, this.tamY);
+    
+
+    if(this.direccionEscudo==="ARRIBA"){
+        image(this.data.escudoArriba, this.posX, this.posY, this.tamX, this.tamY);
+    } else if (this.direccionEscudo === "ABAJO") {
+      image(this.data.escudoAbajo, this.posX, this.posY, this.tamX, this.tamY);
+    } else if (this.direccionEscudo === "IZQUIERDA") {
+      image(this.data.escudoIzquierda, this.posX, this.posY, this.tamX, this.tamY);
+    } else if (this.direccionEscudo === "DERECHA") {
+      image(this.data.escudoDerecha, this.posX, this.posY, this.tamX, this.tamY);
+    }
+  
     print(this.direccionEscudo);
     this.mover();
   }
@@ -20,28 +30,24 @@ class escudo{
     
     if (keyIsDown(UP_ARROW)){
     this.direccionEscudo = "ARRIBA";
-    this.posX = 400;
-    this.posY = 150;
-    this.tamX = 80;
-    this.tamY = 10;
+    this.posX = 360;
+    this.posY = 100;
+
     } else if (keyIsDown(DOWN_ARROW) === true){
     this.direccionEscudo = "ABAJO";
-    this.posX = 400;
-    this.posY = 250;
-    this.tamX = 80;
-    this.tamY = 10;
+    this.posX = 360;
+    this.posY = 170;
+    
     } else if (keyIsDown(LEFT_ARROW) === true){
     this.direccionEscudo = "IZQUIERDA";
-    this.posX = 350;
-    this.posY = 200;
-    this.tamX = 10;
-    this.tamY = 80;
+    this.posX = 310;
+    this.posY = 150;
+    
     } else if (keyIsDown(RIGHT_ARROW) === true){
     this.direccionEscudo = "DERECHA";
-    this.posX = 450;
-    this.posY = 200;
-    this.tamX = 10;
-    this.tamY = 80;
+    this.posX = 410;
+    this.posY = 150;
+  
     }
   }
 }
