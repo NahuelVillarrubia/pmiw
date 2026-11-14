@@ -1,16 +1,19 @@
 class Flecha{
- constructor(posX,posY){
+ constructor(posX,posY,data){
+   this.data= data;
    this.posX = posX;
    this.posY = posY;
    this.velocidad_h = 5;
    this.velocidad_v = 3;
    this.direccion = "-";
    this.disparada = false;
+   this.ancho=30;
+   this.alto=30;
   }
 
   dibujar(){
     if(this.disparada){
-    fill(255,0,0); 
+    
     this.mover();
     }
   }
@@ -21,20 +24,30 @@ class Flecha{
 
   disparaIzquierda(){
     this.posX = this.posX - this.velocidad_h;
-    rect(this.posX, this.posY, 15, 5);
+    imageMode(CENTER);
+    image(this.data.flechaDerecha, this.posX, this.posY, this.ancho, this.alto);
+    imageMode(CORNER);
   }
 
   disparaDerecha(){
     this.posX = this.posX + this.velocidad_h;
-    rect(this.posX, this.posY, 15, 5);
+    imageMode(CENTER);
+    image(this.data.flechaIzquierda, this.posX, this.posY, this.ancho, this.alto);
+    imageMode(CORNER);
   }
   disparaAbajo(){
      rect(this.posX, this.posY, 5, 15)
+    imageMode(CENTER);
+    image(this.data.flechaArriba, this.posX, this.posY, this.ancho, this.alto);
+    imageMode(CORNER);
     this.posY = this.posY + this.velocidad_v; 
   }
 
   disparaArriba(){
-     rect(this.posX, this.posY, 5, 15)
+    rect(this.posX, this.posY, 5, 15)
+    imageMode(CENTER);
+    image(this.data.flechaAbajo, this.posX, this.posY, this.ancho, this.alto);
+    imageMode(CORNER);
     this.posY = this.posY - this.velocidad_v; 
   }
 
