@@ -71,8 +71,8 @@ class juego {
     this.personaje = new personaje();
   }
 
-  crearEscudo() {
-    this.escudo = new escudo();
+   crearEscudo() {
+    this.escudo = new escudo(this.data);
   }
 
   disparos() {
