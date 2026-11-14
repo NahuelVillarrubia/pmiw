@@ -4,18 +4,16 @@ class enemigo {
     this.daño = 1;
 
     this.lado = ladoAsignado;
-    this.flecha = new Flecha(0, 0);
+    this.flecha = new Flecha(0,0,data);
     
 
    this.frames=[];
    this.velocidad=15;
-   this.ancho=150;
-   this.alto=150;
+   this.ancho=80;
+   this.alto=80;
    this.posicionar();
   }
   
-  
-
   posicionar(){
     if (this.lado === "ARRIBA") {
       this.posX = 400;
@@ -39,8 +37,6 @@ class enemigo {
       this.frames = this.data.disparaDerecha;
     }
 
-    this.flecha.posX = this.posX;
-    this.flecha.posY = this.posY;
   }
 
   dibujar() {
