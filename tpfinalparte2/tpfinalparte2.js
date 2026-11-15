@@ -1,4 +1,4 @@
-// link de video acá :P
+// link de video acá
 
 let data;
 let objJuego;
