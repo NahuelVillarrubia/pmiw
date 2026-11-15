@@ -1,4 +1,4 @@
-// link de video acá
+//https://youtu.be/jOXvsZxrhvE?si=a4KWxhmmusTA3gYO
 
 let data;
 let objJuego;
